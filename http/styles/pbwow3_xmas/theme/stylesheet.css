@@ -1,0 +1,55 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			PBWoW 3 Xmas
+	Based on style:		PBWoW 3 Wrath of the Lich King
+	Original author:	PayBas ( http://pbwow.com/ )
+    --------------------------------------------------------------
+*/
+@import url("common.css?v=3.2");
+
+body.pbwow3 #logo, body.pbwow3 .logo {
+	background: url("./images/logo.png") no-repeat 50% 0;
+	margin-top: 25px;
+	width: 300px;
+	height: 150px;
+	background-size: 100% 100%;
+}
+
+body.pbwow3 #page-body:before {
+	box-shadow: 0 0 12px 6px #000000b3;
+	display: inherit;
+}
+body.pbwow3 #page-body {
+	background-color: rgba(0,0,0,0.90);
+}
+
+#video-element1 {
+	background-image: none;
+	position: absolute;
+	top: 1px;
+	right: 407px;
+}
+#video-element2 {
+	background-image: none;
+	position: absolute;
+	top: 61px;
+	left: 519px;
+}
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 859px), only screen and (max-device-width: 859px) {
+	body.pbwow3 #logo, body.pbwow3 .logo {
+		width: 210px;
+		height: 107px;
+	}
+}
+
+@media only screen and (max-width: 999px), only screen and (max-device-width: 999px) {
+	body.pbwow3 {
+		background-image: url("./images/bg-small.jpg");
+	}
+
+}
+
