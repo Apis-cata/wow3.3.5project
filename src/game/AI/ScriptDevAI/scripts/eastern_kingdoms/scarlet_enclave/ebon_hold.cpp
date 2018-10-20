@@ -1000,8 +1000,8 @@ enum
 };
 
 // movement destination coords
-static const float aEyeDestination[3] = { 2217.5837f, -5743.09619f, 254.101486f };
-static const float aEyeStartPos[3] = { 2322.3186f, -5693.4653f, 429.007019f };
+static const float aEyeDestination[3] = {1748.484985f, -5893.064453f, 157.334869f };
+static const float aEyeStartPos[3] = { 2362.24585f, -5660.334961f,503.217346f };
 
 struct npc_eye_of_acherusAI : public ScriptedAI
 {
