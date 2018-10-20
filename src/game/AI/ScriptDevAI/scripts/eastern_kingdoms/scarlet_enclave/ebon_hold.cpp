@@ -1001,7 +1001,7 @@ enum
 
 // movement destination coords
 static const float aEyeDestination[3] = { 2716.02f, -5485.19f, 171.4172f };
-static const float aEyeStartPos[3] = { 2716.02f, -5485.19f, 171.4172f };
+static const float aEyeStartPos[3] = { 2322.3186f, -5693.4653f, 429.007019f };
 
 struct npc_eye_of_acherusAI : public ScriptedAI
 {
@@ -1053,7 +1053,7 @@ struct npc_eye_of_acherusAI : public ScriptedAI
 	}
 
 	void AttackStart(Unit* /*pWho*/) override {}
-
+	
 	void UpdateAI(const uint32 uiDiff) override
 	{
 		if (m_isFinished)
