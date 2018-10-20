@@ -4,5 +4,5 @@
  #define REVISION_DATE "2018-10-20T03:34:58+04:00"
  #define VERSION "0.18 official C-MANGOS"
  #define VERSIONOUR "0.01Beta"
- #define COMMIT "Number 0010"
+#define COMMIT "commit #0015"
 #endif // __REVISION_H__
