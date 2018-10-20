@@ -30,15 +30,7 @@
 #include "revision.h"
 #include "Util.h"
 
- // global announce
-bool ChatHandler::HandleAnnounceCommand(char* args)
-{
-	if (!*args)
-		return false;
 
-	sWorld.SendWorldText(LANG_SYSTEMMESSAGE, args);
-	return true;
-}
 
 bool ChatHandler::HandleHelpCommand(char* args)
 {
