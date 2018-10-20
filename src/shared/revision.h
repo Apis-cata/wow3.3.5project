@@ -4,5 +4,5 @@
  #define REVISION_DATE "2018-10-20T03:34:58+04:00"
  #define VERSION "0.18"
  #define VERSIONOUR "0.01Beta"
- #define COMMITOUR "Number 0010"
+ #define COMMIT "Number 0010"
 #endif // __REVISION_H__
