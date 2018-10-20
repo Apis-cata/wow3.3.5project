@@ -1,3 +1,36 @@
+/* This file is part of the ScriptDev2 Project. See AUTHORS file for Copyright information
+* This program is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program; if not, write to the Free Software
+* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+/* ScriptData
+SDName: Ebon_Hold
+SD%Complete: 95
+SDComment: Quest support: 12641, 12687, 12698, 12733, 12739(and 12742 to 12750), 12754, 12801, 12848
+SDCategory: Ebon Hold
+EndScriptData */
+/* ContentData
+npc_a_special_surprise
+npc_death_knight_initiate
+npc_unworthy_initiate_anchor
+npc_unworthy_initiate
+go_acherus_soul_prison
+npc_eye_of_acherus
+npc_scarlet_ghoul
+npc_highlord_darion_mograine
+npc_fellow_death_knight
+npc_scarlet_courier
+EndContentData */
 
 #include "AI/ScriptDevAI/include/precompiled.h"
 #include "AI/ScriptDevAI/base/escort_ai.h"
@@ -996,7 +1029,7 @@ enum
 	POINT_EYE_START_POS = 0,
 	POINT_EYE_DESTINATION = 1,
 
-	START_POINT_PAUSE_TIME = 1000
+	START_POINT_PAUSE_TIME = 5000
 };
 
 // movement destination coords
@@ -1113,7 +1146,7 @@ struct npc_eye_of_acherusAI : public ScriptedAI
 				DoScriptText(EMOTE_CONTROL, m_creature, pPlayer);
 
 			if (m_creature->m_movementInfo.HasMovementFlag(MOVEFLAG_LEVITATING))
-				m_creature->SetLevitate(true);             // HACK to remove levitating flag and thus permit fly.
+				m_creature->SetLevitate(false);             // HACK to remove levitating flag and thus permit fly.
 
 			if (Unit* unit = m_creature->GetCharmer())
 			{
