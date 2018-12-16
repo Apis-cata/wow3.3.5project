@@ -149,10 +149,7 @@ int main(int argc, char* argv[])
         }
     }
 #endif
-	// закомментированна
-    sLog.outString("%s [world-daemon]", _FULLVERSION(REVISION_DATE, REVISION_ID));
-	//sLog.outString("%s [BUILD INFO]", _FULLVERSION(VERSIONOUR, COMMIT));//
-    sLog.outString("<Ctrl-C> to stop.");
+	sLog.outString("<Ctrl-C> to stop.");
     sLog.outString("\n\n"
                    "       _____     __  __       _   _  _____  ____   _____ \n"
                    "      / ____|   |  \\/  |     | \\ | |/ ____|/ __ \\ / ____|\n"
