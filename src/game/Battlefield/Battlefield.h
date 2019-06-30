@@ -29,7 +29,7 @@ class Group;
 
 enum BattlefieldStatus
 {
-    BF_STATUS_COOLDOWN      = 0,
+    BF_STATUS_COOLDOWN      = 60,
     BF_STATUS_IN_PROGRESS   = 1
 };
 
